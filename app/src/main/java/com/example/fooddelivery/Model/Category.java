@@ -1,9 +1,13 @@
 package com.example.fooddelivery.Model;
 
 public class Category {
+
+    //region Variables
     private String Name;
     private String Image;
+    //endregion
 
+    //region Constructors
     public Category() {
 
     }
@@ -13,6 +17,9 @@ public class Category {
         Image = image;
     }
 
+    //endregion
+
+    //region Getters/Setters
     public String getName() {
         return Name;
     }
@@ -28,4 +35,6 @@ public class Category {
     public void setImage(String image) {
         Image = image;
     }
+    //endregion
+
 }

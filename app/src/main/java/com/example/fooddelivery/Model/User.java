@@ -1,10 +1,13 @@
 package com.example.fooddelivery.Model;
 
 public class User {
+
+    //region Variables
     private String Name;
     private String Password;
+    //endregion
 
-    //Constructors
+    //region Constructors
     public User(){
 
     }
@@ -13,8 +16,9 @@ public class User {
         Name = name;
         Password = password;
     }
+    //endregion
 
-    //Getter/Setter
+    //region Getters/Setters
 
     public String getName() {
         return Name;
@@ -31,4 +35,7 @@ public class User {
     public void setPassword(String password) {
         Password = password;
     }
+
+    //endregion
+
 }
