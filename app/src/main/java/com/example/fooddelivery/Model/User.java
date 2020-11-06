@@ -5,6 +5,7 @@ public class User {
     //region Variables
     private String Name;
     private String Password;
+    private String Phone;
     //endregion
 
     //region Constructors
@@ -34,6 +35,14 @@ public class User {
 
     public void setPassword(String password) {
         Password = password;
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String phone) {
+        Phone = phone;
     }
 
     //endregion
