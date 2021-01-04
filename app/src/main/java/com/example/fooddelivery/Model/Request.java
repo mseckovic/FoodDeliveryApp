@@ -6,7 +6,7 @@ public class Request {
 
     //region Variables
 
-    private String phone, name, address, total;
+    private String phone, name, address, total, status;
     private List<Order> foods;
 
     //endregion
@@ -23,6 +23,7 @@ public class Request {
         this.name = name;
         this.address = address;
         this.total = total;
+        this.status = "0"; // 0 - placed, 1 - shipping, 2 - shipped
         this.foods = foods;
     }
 
@@ -68,5 +69,14 @@ public class Request {
     public void setFoods(List<Order> foods) {
         this.foods = foods;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     //endregion
 }
